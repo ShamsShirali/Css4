@@ -1,0 +1,35 @@
+.box{
+    display: block;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+}
+
+label input{
+    display: none;
+}
+
+label .btn{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: all 0.5s;
+}
+
+label input:checked + .box .btn{
+    left: 52.5px;
+}
+
+
+label input:checked + .box {
+   background-color: green;
+}
+
